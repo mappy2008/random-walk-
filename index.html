@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ランダム散歩</title>
+</head>
+<body>
+
+  <h1>ランダム散歩</h1>
+  <p>ボタンを押すと、今日の散歩場所を決めます。</p>
+
+  <!-- モード選択 -->
+  <label>
+    モード：
+    <select id="mode">
+      <option value="japan">日本</option>
+      <option value="famous">海外の有名地</option>
+      <option value="random">完全ランダム</option>
+    </select>
+  </label>
+
+  <br><br>
+
+  <!-- 実行ボタン -->
+  <button id="generateBtn">ここはどう？</button>
+
+  <hr>
+
+  <!-- 結果表示 -->
+  <div id="result">
+    <p id="locationText">まだ場所は決まっていません。</p>
+    <button id="openMapBtn" disabled>Googleマップで開く</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

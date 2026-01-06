@@ -66,8 +66,9 @@ function generateLatLng(area) {
 }
 
 function openGoogleMap(lat, lng) {
+  const query = `${lat},${lng}`;
   const url =
-    `https://www.google.com/maps/@?api=1&map_action=map&center=${lat},${lng}&zoom=17`;
+    `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
   window.open(url, "_blank");
 }
 
